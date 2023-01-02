@@ -25,16 +25,15 @@ docker compose up
 
 ## 上传到腾讯云
 
-创建对象存储并开启静态网站
+创建对象存储并开启静态网站。
 
 下载 [coscli](https://cloud.tencent.com/document/product/436/63144)
 
-初始化配置：
 ```
 d:\coscli\coscli.exe config init
 ```
 
-`coscli-sycn.bat`：
+`coscli-sync.bat`：
 ```bat
 d:\coscli\coscli.exe sync -r %cd%\_site cos://blog
 ```
